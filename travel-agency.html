@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelWorld - Туристическое агентство</title>
+
+    <link href="E:\WEB\CSS\style-for-travel-agency.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Навигация -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="#" class="logo">Travel<span>World</span></a>
+            <div class="nav-links">
+                <a href="#about" class="nav-link">О нас</a>
+                <a href="#destinations" class="nav-link">Направления</a>
+                <a href="#tours" class="nav-link">Туры</a>
+                <a href="#testimonials" class="nav-link">Отзывы</a>
+                <a href="#contacts" class="nav-link">Контакты</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Блок с заголовком -->
+    <section class="hero">
+        <h1>Откройте мир с TravelWorld</h1>
+        <p>Путешествия, которые вы никогда не забудете</p>
+        <a href="#tours" class="btn">Выбрать тур</a>
+    </section>
+
+    <!-- Блок с описанием -->
+    <section id="about" class="about">
+        <h2 class="section-title">О нашем агентстве</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <h3>Мы создаем незабываемые впечатления</h3>
+                <p>TravelWorld - это команда профессиональных путешественников, которая уже более 15 лет помогает людям открывать для себя новые страны и культуры. Мы тщательно отбираем каждый тур и направление, чтобы обеспечить вам максимальный комфорт и безопасность во время путешествия.</p>
+                <p>Наша философия - индивидуальный подход к каждому клиенту. Мы не просто продаем туры, мы создаем уникальные маршруты, которые соответствуют вашим интересам, бюджету и предпочтениям.</p>
+                <a href="#contacts" class="btn">Связаться с нами</a>
+            </div>
+            <div class="about-image">
+                <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="О нашем агентстве">
+            </div>
+        </div>
+    </section>
+
+    <!-- Карусель -->
+    <section class="carousel-section">
+        <h2 class="section-title">Наши лучшие предложения</h2>
+        <div class="carousel-container">
+            <div class="carousel">
+                <div class="carousel-slide">
+                    <img src="https://images.unsplash.com/photo-1503917988258-f87a78e3c995?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Тур в Италию">
+                    <div class="slide-caption">
+                        <h3>Романтическая Италия</h3>
+                        <p>Откройте для себя Венецию, Рим и Флоренцию</p>
+                    </div>
+                </div>
+                <div class="carousel-slide">
+                    <img src="https://images.unsplash.com/photo-1501594907352-04cda38ebc29?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Тур на Мальдивы">
+                    <div class="slide-caption">
+                        <h3>Райские Мальдивы</h3>
+                        <p>Отдых в бунгало над кристально чистой водой</p>
+                    </div>
+                </div>
+                <div class="carousel-slide">
+                    <img src="https://images.unsplash.com/photo-1523482580672-f109ba8cb9be?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Тур в Японию">
+                    <div class="slide-caption">
+                        <h3>Загадочная Япония</h3>
+                        <p>Сакура, Фудзияма и современные мегаполисы</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-btn" id="prevBtn"><i class="fas fa-chevron-left"></i></button>
+            <button class="carousel-btn" id="nextBtn"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </section>
+
+    <!-- Блок с популярными направлениями -->
+    <section id="destinations" class="destinations">
+        <h2 class="section-title">Популярные направления</h2>
+        <div class="destinations-grid">
+            <div class="destination-card">
+                <div class="destination-image">
+                    <img src="https://images.unsplash.com/photo-1533107862482-0e6974b06ec4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Бали, Индонезия">
+                </div>
+                <div class="destination-info">
+                    <h3>Бали, Индонезия</h3>
+                    <p>Тропический рай с потрясающими пляжами, рисовыми террасами и богатой культурой.</p>
+                    <p class="price">от $1200</p>
+                </div>
+            </div>
+            <div class="destination-card">
+                <div class="destination-image">
+                    <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Париж, Франция">
+                </div>
+                <div class="destination-info">
+                    <h3>Париж, Франция</h3>
+                    <p>Город любви, искусства и изысканной кухни. Эйфелева башня, Лувр и уютные кафе.</p>
+                    <p class="price">от $950</p>
+                </div>
+            </div>
+            <div class="destination-card">
+                <div class="destination-image">
+                    <img src="https://images.unsplash.com/photo-1518391846015-55a9cc003b25?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Нью-Йорк, США">
+                </div>
+                <div class="destination-info">
+                    <h3>Нью-Йорк, США</h3>
+                    <p>Город, который никогда не спит. Таймс-сквер, Центральный парк и Статуя Свободы.</p>
+                    <p class="price">от $1500</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Блок с турами -->
+    <section id="tours" class="tours">
+        <h2 class="section-title">Наши туры</h2>
+        <div class="tours-grid">
+            <div class="tour-card">
+                <div class="tour-image">
+                    <img src="https://images.unsplash.com/photo-1527631746610-bca00a040d60?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Экскурсионный тур по Европе">
+                </div>
+                <div class="tour-info">
+                    <h3>Гранд тур по Европе</h3>
+                    <p>14-дневный тур по 5 странам: Франция, Германия, Австрия, Италия и Швейцария. Включены все переезды, проживание в отелях 4* и экскурсии с профессиональными гидами.</p>
+                    <div class="tour-details">
+                        <span class="tour-price">$2500</span>
+                        <a href="#" class="btn">Забронировать</a>
+                    </div>
+                </div>
+            </div>
+            <div class="tour-card">
+                <div class="tour-image">
+                    <img src="https://images.unsplash.com/photo-1464037866556-6812c9d1c72e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Отдых на Сейшелах">
+                </div>
+                <div class="tour-info">
+                    <h3>Райский отдых на Сейшелах</h3>
+                    <p>10 дней в роскошном отеле на берегу Индийского океана. Все включено, спа-процедуры, дайвинг и экскурсии на соседние острова.</p>
+                    <div class="tour-details">
+                        <span class="tour-price">$3200</span>
+                        <a href="#" class="btn">Забронировать</a>
+                    </div>
+                </div>
+            </div>
+            <div class="tour-card">
+                <div class="tour-image">
+                    <img src="https://images.unsplash.com/photo-1523482580672-f109ba8cb9be?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Тур по Японии">
+                </div>
+                <div class="tour-info">
+                    <h3>Япония: традиции и современность</h3>
+                    <p>12-дневный тур по Токио, Киото, Осака и Хиросима. Чайные церемонии, самурайские замки, суши-мастер-классы и высокоскоростные поезда.</p>
+                    <div class="tour-details">
+                        <span class="tour-price">$2800</span>
+                        <a href="#" class="btn">Забронировать</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Блок с отзывами -->
+    <section id="testimonials" class="testimonials">
+        <h2 class="section-title">Отзывы наших клиентов</h2>
+        <div class="testimonials-container">
+            <div class="testimonial-card">
+                <div class="testimonial-header">
+                    <div class="testimonial-avatar">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Мария Иванова">
+                    </div>
+                    <div class="testimonial-author">
+                        <h4>Мария Иванова</h4>
+                        <p>Тур по Италии, май 2025</p>
+                    </div>
+                </div>
+                <p class="testimonial-text">"Это было самое потрясающее путешествие в моей жизни! Все было организовано на высшем уровне - трансферы, экскурсии, отели. Особенно понравился гид в Риме, который показал нам город с неожиданной стороны."</p>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <div class="testimonial-header">
+                    <div class="testimonial-avatar">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Алексей Петров">
+                    </div>
+                    <div class="testimonial-author">
+                        <h4>Алексей Петров</h4>
+                        <p>Отдых на Мальдивах, январь 2025</p>
+                    </div>
+                </div>
+                <p class="testimonial-text">"Спасибо TravelWorld за идеально организованный отдых. Все прошло без единой проблемы, от встречи в аэропорту до обратного вылета. Отель превзошел все ожидания, а дайвинг был просто незабываемым!"</p>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <div class="testimonial-header">
+                    <div class="testimonial-avatar">
+                        <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Елена Смирнова">
+                    </div>
+                    <div class="testimonial-author">
+                        <h4>Елена Смирнова</h4>
+                        <p>Экскурсионный тур по Японии, апрель 2025</p>
+                    </div>
+                </div>
+                <p class="testimonial-text">"Я давно мечтала о поездке в Японию, и TravelWorld сделали эту мечту реальностью. Программа была насыщенной, но без спешки. Особенно запомнилось цветение сакуры в Киото. Обязательно обращусь снова!"</p>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Галерея -->
+    <section class="gallery">
+        <h2 class="section-title">Наши моменты</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1503917988258-f87a78e3c995?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Италия">
+                <div class="gallery-caption">Венеция, Италия</div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Париж">
+                <div class="gallery-caption">Эйфелева башня, Париж</div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1518391846015-55a9cc003b25?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Нью-Йорк">
+                <div class="gallery-caption">Таймс-сквер, Нью-Йорк</div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1527631746610-bca00a040d60?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Прага">
+                <div class="gallery-caption">Карлов мост, Прага</div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1464037866556-6812c9d1c72e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Сейшелы">
+                <div class="gallery-caption">Пляж Анс Сурс д'Аржан, Сейшелы</div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Греция">
+                <div class="gallery-caption">Санторини, Греция</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq">
+        <h2 class="section-title">Часто задаваемые вопросы</h2>
+        <div class="faq-container">
+            <div class="faq-item">
+                <div class="faq-question">Как забронировать тур?</div>
+                <div class="faq-answer">
+                    <p>Вы можете забронировать тур онлайн через наш сайт, по телефону или посетив наш офис. Для бронирования потребуется предоплата в размере 30% от стоимости тура. Оставшуюся сумму необходимо оплатить не позднее, чем за 14 дней до даты вылета.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">Какие документы нужны для путешествия?</div>
+                <div class="faq-answer">
+                    <p>Для международных поездок вам понадобится заграничный паспорт с достаточным сроком действия (обычно не менее 6 месяцев после возвращения) и виза, если она требуется для посещения страны. Мы поможем оформить все необходимые документы.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">Есть ли у вас страховка?</div>
+                <div class="faq-answer">
+                    <p>Да, мы предлагаем комплексные страховые пакеты, которые включают медицинскую страховку, страховку от невыезда и потери багажа. Стоимость страховки зависит от страны пребывания и продолжительности поездки.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">Можно ли изменить дату поездки после бронирования?</div>
+                <div class="faq-answer">
+                    <p>Да, изменение даты возможно, но может повлечь дополнительные расходы в зависимости от условий авиакомпании и отеля. Пожалуйста, сообщите нам о необходимости изменений как можно раньше.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">Что делать, если тур отменяется?</div>
+                <div class="faq-answer">
+                    <p>В случае отмены тура по нашей вине мы предлагаем альтернативные варианты или полный возврат средств. Если отмена происходит по независящим от нас обстоятельствам (например, стихийное бедствие), мы действуем согласно условиям договора и страховки.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Контакты и карта -->
+    <section id="contacts" class="contacts">
+        <h2 class="section-title">Наши контакты</h2>
+        <div class="contacts-container">
+            <div class="contact-info">
+                <h3>Свяжитесь с нами</h3>
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-text">
+                            г. Москва, ул. Тверская, д. 10, офис 45
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-text">
+                            <a href="tel:+74951234567">+7 (495) 123-45-67</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-text">
+                            <a href="mailto:info@travelworld.ru">info@travelworld.ru</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-text">
+                            Пн-Пт: 10:00 - 20:00<br>
+                            Сб-Вс: 11:00 - 18:00
+                        </div>
+                    </div>
+                </div>
+                <div class="region-buttons">
+                    <button class="region-btn active" data-region="europe">Европа</button>
+                    <button class="region-btn" data-region="asia">Азия</button>
+                    <button class="region-btn" data-region="america">Америка</button>
+                    <button class="region-btn" data-region="africa">Африка</button>
+                </div>
+            </div>
+            <div class="map-container">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/World_map_-_low_resolution.svg/1200px-World_map_-_low_resolution.svg.png" alt="Карта мира" class="map-image">
+                <div class="map-regions">
+                    <div class="region europe" style="width: 150px; height: 150px; top: 30%; left: 45%;"></div>
+                    <div class="region asia" style="width: 200px; height: 200px; top: 35%; left: 70%;"></div>
+                    <div class="region america" style="width: 120px; height: 120px; top: 40%; left: 15%;"></div>
+                    <div class="region africa" style="width: 140px; height: 140px; top: 50%; left: 50%;"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer>
+        <div class="footer-content">
+            <div class="logo">Travel<span>World</span></div>
+            <div class="social-links">
+                <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+            </div>
+            <p class="copyright">© 2025 TravelWorld. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Карусель
+        const carousel = document.querySelector('.carousel');
+        const slides = document.querySelectorAll('.carousel-slide');
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+        
+        let currentSlide = 0;
+        const slideCount = slides.length;
+        
+        function goToSlide(n) {
+            carousel.style.transform = `translateX(-${n * 100}%)`;
+            currentSlide = n;
+        }
+        
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % slideCount;
+            goToSlide(currentSlide);
+        }
+        
+        function prevSlide() {
+            currentSlide = (currentSlide - 1 + slideCount) % slideCount;
+            goToSlide(currentSlide);
+        }
+        
+        nextBtn.addEventListener('click', nextSlide);
+        prevBtn.addEventListener('click', prevSlide);
+        
+        // Автоматическая прокрутка карусели
+        let slideInterval = setInterval(nextSlide, 5000);
+        
+        carousel.addEventListener('mouseenter', () => {
+            clearInterval(slideInterval);
+        });
+        
+        carousel.addEventListener('mouseleave', () => {
+            slideInterval = setInterval(nextSlide, 5000);
+        });
+        
+        // Интерактивная карта
+        const regionBtns = document.querySelectorAll('.region-btn');
+        const regions = document.querySelectorAll('.region');
+        
+        regionBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Удаляем активный класс у всех кнопок
+                regionBtns.forEach(b => b.classList.remove('active'));
+                // Добавляем активный класс текущей кнопке
+                btn.classList.add('active');
+                
+                // Скрываем все регионы
+                regions.forEach(region => region.classList.remove('active'));
+                // Показываем выбранный регион
+                const region = document.querySelector(`.${btn.dataset.region}`);
+                region.classList.add('active');
+            });
+        });
+        
+        // Показываем Европу по умолчанию
+        document.querySelector('.europe').classList.add('active');
+        
+        // FAQ аккордеон
+        const faqQuestions = document.querySelectorAll('.faq-question');
+        
+        faqQuestions.forEach(question => {
+            question.addEventListener('click', () => {
+                const item = question.parentNode;
+                const isActive = item.classList.contains('active');
+                
+                // Закрываем все вопросы
+                document.querySelectorAll('.faq-item').forEach(el => {
+                    el.classList.remove('active');
+                });
+                
+                // Открываем текущий, если он был закрыт
+                if (!isActive) {
+                    item.classList.add('active');
+                }
+            });
+        });
+        
+        // Плавная прокрутка для навигации
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
