@@ -1,1 +1,9 @@
-[]
+[
+  {
+    "id": "1748591050408",
+    "title": "Buy milk",
+    "description": "Get 2 liters of milk",
+    "completed": false,
+    "createdAt": "2025-05-30T07:44:10.408Z"
+  }
+]
